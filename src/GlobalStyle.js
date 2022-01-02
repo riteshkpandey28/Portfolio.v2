@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
         --lightCyan: #00fff5;
 
         // font-szie
-        --fontSuperBig: 2.5rem;
+        --fontSuperBig: 4.5rem;
         --fontBig: 1.5rem;
         --fontMed: 1rem;
         --fontSmall: 0.5rem;
