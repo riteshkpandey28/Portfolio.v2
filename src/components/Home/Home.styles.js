@@ -33,14 +33,14 @@ export const Text = styled.div`
   }
 
   h4 {
-    font-size: var(--fontBig);
+    font-size: var(--fontMed);
   }
 
   @media screen and (max-width: 768px) {
     padding: 10px;
     width: 100%;
     h1 {
-      font-size: var(--fontBig);
+      font-size: var(--fontMed);
     }
     h4 {
       font-size: 1rem;
@@ -50,7 +50,7 @@ export const Text = styled.div`
 
 export const ExploreBtn = styled.button`
   width: 50%;
-  font-size: var(--fontBig);
+  font-size: var(--fontMed);
   font-family: var(--fontRed);
   background: linear-gradient(
     to bottom right,
@@ -96,7 +96,7 @@ export const Options = styled(Link)`
   margin: 0 10px 25px 10px;
   border-radius: 15px 50px;
   font-family: var(--fontSpeakNow);
-  font-size: var(--fontBig);
+  font-size: var(--fontMed);
   text-decoration: none;
   color: var(--white);
   cursor: pointer;
@@ -168,7 +168,7 @@ export const OtherOptions = styled.div`
   padding: 15px;
   margin: 0 10px 25px 10px;
   font-family: var(--fontSpeakNow);
-  font-size: var(--fontBig);
+  font-size: var(--fontMed);
   text-decoration: none;
   color: var(--white);
   cursor: pointer;

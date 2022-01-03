@@ -102,7 +102,7 @@ class Home extends React.Component {
             <Content>
               <Text>
                 <Menu>
-                  <Options to="/experience">
+                  <Options to="/education">
                     <i className="fas fa-user-graduate"></i> <br /> Education
                   </Options>
                   <Options to="/experience">

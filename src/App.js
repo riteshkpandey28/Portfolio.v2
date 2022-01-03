@@ -8,7 +8,7 @@ import { GlobalStyle } from "./GlobalStyle";
 
 // components
 import Home from "./components/Home";
-import Experience from "./components/Experience";
+import Education from "./components/Education";
 
 // resume
 import Resume from "./assests/resume.pdf";
@@ -18,7 +18,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/resume" element={Resume} />
-      <Route path="/experience" element={<Experience />} />
+      <Route path="/education" element={<Education />} />
     </Routes>
     <GlobalStyle />
   </BrowserRouter>

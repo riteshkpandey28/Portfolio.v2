@@ -28,9 +28,9 @@ export const GlobalStyle = createGlobalStyle`
 
         // font-szie
         --fontSuperBig: 4.5rem;
-        --fontBig: 1.5rem;
-        --fontMed: 1rem;
-        --fontSmall: 0.5rem;
+        --fontBig: 2.5rem;
+        --fontMed: 1.5rem;
+        --fontSmall: 0.8rem;
 
         // font-family
         --fontReputation: 'UnifrakturMaguntia', cursive;
