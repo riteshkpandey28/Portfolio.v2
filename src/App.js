@@ -7,21 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./GlobalStyle";
 
 // components
-import Header from "./components/Header";
-import BgVideo from "./components/BgVideo";
+import Home from "./components/Home";
 
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <BgVideo /> <Header />{" "}
-          </>
-        }
-      />
-      <Route path="/*" element={<Header />} />
+      <Route path="/" element={<Home />} />
     </Routes>
     <GlobalStyle />
   </BrowserRouter>

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 20px;
-  max-height: 200px;
   animation: animateHome 4s;
 
   @keyframes animateHome {
@@ -25,6 +24,7 @@ export const Content = styled.div`
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
+  min-height: 600px;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -36,7 +36,7 @@ export const Content = styled.div`
 export const Thumb = styled.img`
   width: 100%;
   height: 600px;
-  max-width: 720px;
+  max-width: 620px;
   transition: all 0.3s;
   object-fit: cover;
   border-radius: 20px;
@@ -111,3 +111,7 @@ export const SocialMedia = styled.div`
     margin: 15px 5px 0px 5px;
   }
 `;
+
+export const Menu = styled.div``;
+
+export const Options = styled.div``;
