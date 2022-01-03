@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 
 // styles
 import { SocialIcon } from "react-social-icons";
+import { Wrapper, Content } from "../Common.styles";
 import {
-  Wrapper,
-  Content,
   Thumb,
   Text,
   ExploreBtn,
   SocialMedia,
   Menu,
   Options,
+  OtherOptions,
+  OtherMenu,
 } from "./Home.styles";
 
-// Background Video
+// assests
 import BgVideo from "../BgVideo";
-
-// images
 import Profile from "../../assests/profile.jpg";
+import Resume from "../../assests/resume.pdf";
 
 class Home extends React.Component {
   constructor() {
@@ -102,26 +102,36 @@ class Home extends React.Component {
             <Content>
               <Text>
                 <Menu>
-                  <Options>
+                  <Options to="/experience">
                     <i className="fas fa-user-graduate"></i> <br /> Education
                   </Options>
-                  <Options>
+                  <Options to="/experience">
                     <i className="fas fa-briefcase"></i> <br /> Experience
                   </Options>
-                  <Options>
+                  <Options to="/experience">
                     <i className="fas fa-chart-line"></i> <br /> Skills
                   </Options>
-                  <Options>
+                  <Options to="/experience">
                     <i className="fas fa-trophy"></i> <br /> Achievements
                   </Options>
-                  <Options>
+                  <Options to="/experience">
                     <i className="fas fa-bahai"></i> <br /> Certifications
                   </Options>
-                  <Options>
+                  <Options to="/experience">
                     <i className="fas fa-code"></i> <br /> Projects
                   </Options>
                 </Menu>
-                <ExploreBtn onClick={this.handleClick}>Know Me</ExploreBtn>
+                <OtherMenu>
+                  <a href={Resume} target="blank">
+                    <OtherOptions>
+                      <i className="fas fa-download"></i> <br /> Download CV
+                    </OtherOptions>
+                  </a>
+                  <OtherOptions onClick={this.handleClick}>
+                    <i className="fas fa-user"></i> <br />
+                    About Me
+                  </OtherOptions>
+                </OtherMenu>
                 <SocialMedia>
                   <SocialIcon
                     url="mailto:riteshkumar.dp@somaiya.edu"

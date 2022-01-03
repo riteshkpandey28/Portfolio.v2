@@ -1,37 +1,5 @@
 import styled from "styled-components";
-
-export const Wrapper = styled.div`
-  padding: 20px;
-  animation: animateHome 4s;
-
-  @keyframes animateHome {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    padding: 5px;
-  }
-`;
-
-export const Content = styled.div`
-  padding: 20px;
-  display: flex;
-  max-width: var(--maxWidth);
-  margin: 0 auto;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 20px;
-  min-height: 600px;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    max-height: none;
-    width: 100%;
-  }
-`;
+import { Link } from "react-router-dom";
 
 export const Thumb = styled.img`
   width: 100%;
@@ -118,7 +86,7 @@ export const Menu = styled.div`
   grid-gap: 2rem;
 `;
 
-export const Options = styled.div`
+export const Options = styled(Link)`
   background: linear-gradient(
     to bottom right,
     var(--lightPurple),
@@ -126,9 +94,11 @@ export const Options = styled.div`
   );
   padding: 15px;
   margin: 0 10px 25px 10px;
-  border-radius: 45px;
+  border-radius: 15px 50px;
   font-family: var(--fontSpeakNow);
   font-size: var(--fontBig);
+  text-decoration: none;
+  color: var(--white);
   cursor: pointer;
 
   :hover {
@@ -143,6 +113,7 @@ export const Options = styled.div`
         var(--lightPink),
         var(--lightPurple)
       );
+      border-radius: 15px 50px;
     }
     50% {
       transform: scale(1.2);
@@ -151,6 +122,7 @@ export const Options = styled.div`
         var(--lightPurple),
         var(--lightPink)
       );
+      border-radius: 0;
     }
     100% {
       transform: scale(1);
@@ -159,6 +131,7 @@ export const Options = styled.div`
         var(--lightPink),
         var(--lightPurple)
       );
+      border-radius: 15px 50px;
     }
   }
 
@@ -170,5 +143,73 @@ export const Options = styled.div`
     :last-child {
       margin-bottom: 25px;
     }
+  }
+`;
+
+export const OtherMenu = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: var(--white);
+  }
+`;
+
+export const OtherOptions = styled.div`
+  text-align: center;
+  background: linear-gradient(
+    to bottom right,
+    var(--darkCyan),
+    var(--darkPink)
+  );
+  width: 200px;
+  padding: 15px;
+  margin: 0 10px 25px 10px;
+  font-family: var(--fontSpeakNow);
+  font-size: var(--fontBig);
+  text-decoration: none;
+  color: var(--white);
+  cursor: pointer;
+
+  :hover {
+    animation: animateOtherOption 3s infinite;
+  }
+
+  @keyframes animateOtherOption {
+    0% {
+      transform: scale(1);
+      background: linear-gradient(
+        to bottom right,
+        var(--darkCyan),
+        var(--darkPink)
+      );
+    }
+    50% {
+      transform: scale(1.2);
+      background: linear-gradient(
+        to bottom right,
+        var(--lightCyan),
+        var(--lightPink)
+      );
+      color: var(--black);
+      border-radius: 0;
+    }
+    100% {
+      transform: scale(1);
+      background: linear-gradient(
+        to bottom right,
+        var(--darkCyan),
+        var(--darkPink)
+      );
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    margin: 0 10px;
+    padding: 5px;
+    width: 100px;
   }
 `;
