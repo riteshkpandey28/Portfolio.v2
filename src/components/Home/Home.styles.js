@@ -132,20 +132,33 @@ export const Options = styled.div`
   cursor: pointer;
 
   :hover {
-    background: linear-gradient(
-      to bottom right,
-      var(--lightPink),
-      var(--lightPurple)
-    );
-    animation: animateOption 2s;
+    animation: animateOption 3s infinite;
   }
 
   @keyframes animateOption {
-    from {
+    0% {
       transform: scale(1);
+      background: linear-gradient(
+        to bottom right,
+        var(--lightPink),
+        var(--lightPurple)
+      );
     }
-    to {
+    50% {
       transform: scale(1.2);
+      background: linear-gradient(
+        to bottom right,
+        var(--lightPurple),
+        var(--lightPink)
+      );
+    }
+    100% {
+      transform: scale(1);
+      background: linear-gradient(
+        to bottom right,
+        var(--lightPink),
+        var(--lightPurple)
+      );
     }
   }
 
