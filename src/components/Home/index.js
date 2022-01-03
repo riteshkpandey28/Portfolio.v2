@@ -101,16 +101,26 @@ class Home extends React.Component {
             </Content>
             <Content>
               <Text>
-                <h4>
-                  <Menu>
-                    <Options>Education</Options>
-                    <Options>Experience</Options>
-                    <Options>Skills</Options>
-                    <Options>Achievements</Options>
-                    <Options>Certifications</Options>
-                    <Options>Projects</Options>
-                  </Menu>
-                </h4>
+                <Menu>
+                  <Options>
+                    <i className="fas fa-user-graduate"></i> <br /> Education
+                  </Options>
+                  <Options>
+                    <i className="fas fa-briefcase"></i> <br /> Experience
+                  </Options>
+                  <Options>
+                    <i className="fas fa-chart-line"></i> <br /> Skills
+                  </Options>
+                  <Options>
+                    <i className="fas fa-trophy"></i> <br /> Achievements
+                  </Options>
+                  <Options>
+                    <i className="fas fa-bahai"></i> <br /> Certifications
+                  </Options>
+                  <Options>
+                    <i className="fas fa-code"></i> <br /> Projects
+                  </Options>
+                </Menu>
                 <ExploreBtn onClick={this.handleClick}>Know Me</ExploreBtn>
                 <SocialMedia>
                   <SocialIcon

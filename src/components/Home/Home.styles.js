@@ -112,6 +112,50 @@ export const SocialMedia = styled.div`
   }
 `;
 
-export const Menu = styled.div``;
+export const Menu = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+`;
 
-export const Options = styled.div``;
+export const Options = styled.div`
+  background: linear-gradient(
+    to bottom right,
+    var(--lightPurple),
+    var(--lightPink)
+  );
+  padding: 15px;
+  margin: 0 10px 25px 10px;
+  border-radius: 45px;
+  font-family: var(--fontSpeakNow);
+  font-size: var(--fontBig);
+  cursor: pointer;
+
+  :hover {
+    background: linear-gradient(
+      to bottom right,
+      var(--lightPink),
+      var(--lightPurple)
+    );
+    animation: animateOption 2s;
+  }
+
+  @keyframes animateOption {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    margin: 0 10px;
+    padding: 5px;
+
+    :last-child {
+      margin-bottom: 25px;
+    }
+  }
+`;
