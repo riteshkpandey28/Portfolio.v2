@@ -4,7 +4,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { Wrapper, Content } from "../Common.styles";
 import { Timeline } from "./Education.styles";
 
-const Experience = () => (
+const Education = () => (
   <Wrapper>
     <Content style={{ display: "block" }}>
       <VerticalTimeline animate={true} layout="1-column-left">
@@ -71,4 +71,4 @@ const Experience = () => (
   </Wrapper>
 );
 
-export default Experience;
+export default Education;

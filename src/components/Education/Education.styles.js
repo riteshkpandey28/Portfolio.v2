@@ -5,17 +5,7 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component/dist-
 export const Timeline = styled(VerticalTimelineElement)`
   cursor: pointer;
   :hover {
-    animation: animateTimeline 2s;
-    transform: scale(1.1);
-  }
-
-  @keyframes animateTimeline {
-    from {
-      transform: scale(0.7);
-    }
-    to {
-      transform: scale(1.1);
-    }
+    opacity: 0.8;
   }
 
   h3 {
