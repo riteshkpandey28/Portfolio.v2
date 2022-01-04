@@ -22,9 +22,9 @@ export const Content = styled.div`
   display: flex;
   max-width: var(--maxWidth);
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
-  min-height: 80vh;
+  min-height: 90vh;
 
   @media screen and (max-width: 768px) {
     display: block;

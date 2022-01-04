@@ -3,8 +3,9 @@ import ReactCardFlip from "react-card-flip";
 
 // styles
 import { SocialIcon } from "react-social-icons";
-import { Wrapper, Content } from "../Common.styles";
 import {
+  Wrapper,
+  Content,
   Thumb,
   Text,
   ExploreBtn,
@@ -107,7 +108,7 @@ class Home extends React.Component {
                   <Options to="/experience">
                     <i className="fas fa-briefcase"></i> <br /> Experience
                   </Options>
-                  <Options to="/experience">
+                  <Options to="/skills">
                     <i className="fas fa-chart-line"></i> <br /> Skills
                   </Options>
                   <Options to="/experience">
