@@ -1,6 +1,5 @@
 import React from "react";
 import ReactCardFlip from "react-card-flip";
-import { Link } from "react-router-dom";
 
 // styles
 import { SocialIcon } from "react-social-icons";
