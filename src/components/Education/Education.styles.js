@@ -23,6 +23,11 @@ export const Timeline = styled(VerticalTimelineElement)`
     letter-spacing: 0.1ch;
     font-weight: 100;
   }
+  h5 {
+    margin-bottom: 0;
+    font-family: var(--fontSpeakNow);
+    letter-spacing: 0.1ch;
+  }
 
   p {
     font-size: var(--fontSmall);

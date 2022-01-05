@@ -1,5 +1,6 @@
-// sanity
 import { useEffect, useState } from "react";
+
+// sanity
 import sanityClient from "../../client";
 
 // styles
@@ -45,9 +46,6 @@ const Skills = () => {
 
   return (
     <>
-      <main>
-        <section></section>
-      </main>
       <Wrapper>
         <Content>
           <Text>
