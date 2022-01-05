@@ -13,6 +13,8 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Achievements from "./components/Achievements";
 import Certification from "./components/Certifications";
+import Project from "./components/Projects";
+import SingleProject from "./components/Projects/SingleProject";
 
 // resume
 import Resume from "./assests/resume.pdf";
@@ -27,6 +29,8 @@ const App = () => (
       <Route path="/skills" element={<Skills />} />
       <Route path="/achievements" element={<Achievements />} />
       <Route path="/certification" element={<Certification />} />
+      <Route path="/project" element={<Project />} />
+      <Route path="/project-:slug" element={<SingleProject />} />
     </Routes>
     <GlobalStyle />
   </BrowserRouter>

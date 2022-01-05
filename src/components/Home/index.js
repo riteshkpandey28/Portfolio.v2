@@ -117,7 +117,7 @@ class Home extends React.Component {
                   <Options to="/certification">
                     <i className="fas fa-bahai"></i> <br /> Certifications
                   </Options>
-                  <Options to="/experience">
+                  <Options to="/project">
                     <i className="fas fa-code"></i> <br /> Projects
                   </Options>
                 </Menu>

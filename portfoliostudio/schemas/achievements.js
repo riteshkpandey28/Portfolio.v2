@@ -27,4 +27,10 @@ export default {
       },
     },
   ],
+  preview: {
+    select: {
+      title: "organizer",
+      subtitle: "position",
+    },
+  },
 };

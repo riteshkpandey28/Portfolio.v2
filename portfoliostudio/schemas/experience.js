@@ -72,7 +72,6 @@ export default {
       name: "body",
       title: "Description",
       type: "blockContent",
-      initialValue: false,
     },
   ],
   orderings: [
