@@ -11,8 +11,6 @@ import { Wrapper, Content } from "../Common.styles";
 import { ExperienceTab } from "./Experience.styles";
 import { Timeline } from "../Education/Education.styles";
 
-import Profile from "../../assests/2.jpg";
-
 const Experience = () => {
   const [Works, setWorks] = useState(null);
   useEffect(() => {
