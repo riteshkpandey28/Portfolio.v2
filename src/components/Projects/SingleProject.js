@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 import { Content, Wrapper } from "../Common.styles";
 import { ProjectContent } from "./Project.styles";
 
-import BgVideo from "../BgVideo";
-
 const SingleProject = () => {
   const [singleProject, setSingleProject] = useState(null);
   const { slug } = useParams();
