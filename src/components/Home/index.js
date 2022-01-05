@@ -114,7 +114,7 @@ class Home extends React.Component {
                   <Options to="/achievements">
                     <i className="fas fa-trophy"></i> <br /> Achievements
                   </Options>
-                  <Options to="/experience">
+                  <Options to="/certification">
                     <i className="fas fa-bahai"></i> <br /> Certifications
                   </Options>
                   <Options to="/experience">

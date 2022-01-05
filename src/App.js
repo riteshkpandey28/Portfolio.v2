@@ -12,6 +12,7 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Achievements from "./components/Achievements";
+import Certification from "./components/Certifications";
 
 // resume
 import Resume from "./assests/resume.pdf";
@@ -25,6 +26,7 @@ const App = () => (
       <Route path="/experience" element={<Experience />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/achievements" element={<Achievements />} />
+      <Route path="/certification" element={<Certification />} />
     </Routes>
     <GlobalStyle />
   </BrowserRouter>

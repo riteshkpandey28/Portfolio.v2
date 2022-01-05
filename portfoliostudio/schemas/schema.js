@@ -11,6 +11,7 @@ import author from "./author";
 import skill from "./skill";
 import experience from "./experience";
 import achievements from "./achievements";
+import certification from "./certification";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -26,6 +27,7 @@ export default createSchema({
     skill,
     experience,
     achievements,
+    certification,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
