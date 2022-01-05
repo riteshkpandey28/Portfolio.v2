@@ -8,6 +8,10 @@ export const Timeline = styled(VerticalTimelineElement)`
     opacity: 0.8;
   }
 
+  h1 {
+    margin: 0;
+  }
+
   h3 {
     font-size: var(--fontBig);
     font-family: var(--fontRed);
@@ -34,6 +38,12 @@ export const Timeline = styled(VerticalTimelineElement)`
     letter-spacing: 0.05em;
   }
 
+  .achievemntIcon {
+    color: gold;
+    transform: scale(2);
+    margin: 20px;
+  }
+
   @media screen and (max-width: 600px) {
     h3 {
       font-size: var(--fontMed);
@@ -41,6 +51,10 @@ export const Timeline = styled(VerticalTimelineElement)`
     h4 {
       font-size: var(--fontMed);
       font-size: 1.2rem;
+    }
+    .achievemntIcon {
+      transform: scale(1.5);
+      margin: 11px;
     }
   }
 `;
