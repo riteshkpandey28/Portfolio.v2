@@ -8,7 +8,6 @@ import {
 // sanity
 import sanityClient from "../../client";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 const Project = () => {
   const [Projects, setProjects] = useState(null);
