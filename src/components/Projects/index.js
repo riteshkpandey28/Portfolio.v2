@@ -1,3 +1,4 @@
+import React from "react";
 import { Wrapper, Content } from "../Common.styles";
 import {
   CertificateCard,

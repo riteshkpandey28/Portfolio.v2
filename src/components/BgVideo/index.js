@@ -1,3 +1,4 @@
+import React from "react";
 import { VideoPlayer } from "./BgVideo.styles";
 import BgVideoPlay from "../../assests/bg-video.mp4";
 

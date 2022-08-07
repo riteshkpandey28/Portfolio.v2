@@ -1,7 +1,7 @@
 import React from "react";
 
 // routing
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 // styles
 import { GlobalStyle } from "./GlobalStyle";
@@ -20,7 +20,7 @@ import SingleProject from "./components/Projects/SingleProject";
 import Resume from "./assests/resume.pdf";
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter base="/">
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/resume" element={Resume} />
@@ -33,7 +33,7 @@ const App = () => (
       <Route path="/project-:slug" element={<SingleProject />} />
     </Routes>
     <GlobalStyle />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;

@@ -1,3 +1,4 @@
+import React from "react";
 import sanityClient from "../../client";
 import SanityBlockContent from "@sanity/block-content-to-react";
 
